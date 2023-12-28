@@ -1,0 +1,23 @@
+Quick Installation
+
+Python >= 3.10
+git clone https://github.com/microsoft/TaskWeaver.git
+cd TaskWeaver
+
+#install the requirements
+pip install -r requirements.txt
+
+#config setting
+{
+"llm.api_type": "google_genai",
+"llm.google_genai.api_key": "",
+"llm.google_genai.model": "gemini-pro"
+}
+
+#install chainlit
+pip install chainlit
+#install google-generativeai
+pip install google-generativeai
+
+cd playground/UI/
+chainlit run app.py
